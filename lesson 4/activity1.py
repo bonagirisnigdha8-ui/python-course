@@ -1,11 +1,12 @@
-number1 = 7
-number2 = 2
-number3 = 4
-number4 = 6
-number5 = 5
+answer = input ("when was the first known use of the word quiz ? ")
 
-sum= number1+number2+number3+number4+number5
-print ("the sum of all the 5 numbers is :  ", sum)
+if answer == "1781":
+    print("Correct")
+else:
+    print(f"The answer is 1781, not {answer!r}")
 
-average = sum/5
-print ("the average of all the 5 numbers are :  " , average)
+ answer = input ("Which built-in function can get information from the user? ")   
+if answer = "input":
+  print ("Correct")
+else: 
+   print(f"the answer is input, not {answer!r}")

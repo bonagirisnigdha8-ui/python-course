@@ -1,9 +1,5 @@
-amount = int(input("Please Enter Amount for Withdraw:  "
-                   ))
-note_1 = amount//100
-note_2 = (amount% 100)//50
-note_3 =  ((amount% 100)%50)//10
-
-print("notes of 100 rupee" , note_1)
-print("notes of 50 rupee" , note_2)
-print("notes of 10 rupee" , note_3)
+n=int(input("enter the number: "))
+if(n%2==0 ):
+    print("The number is even")
+else:
+    print("The number is odd")
