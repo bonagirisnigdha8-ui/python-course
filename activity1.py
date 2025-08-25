@@ -1,15 +1,14 @@
-a = 3
-b = 4
-c = 9
-d = 6
-answer = b**c + d/ b*c + a 
-print (answer)
 
+medical_cause=input("Did you have a medical cause yes or no: ")
 
+atten = int(input("enter the attendance of the student: "))
 
-n1=int(input("Enter a numerator:   "))
-n2=int(input("Enter a denominator:  "))
-if n1%n2==0:
-    print(str(n1)+ " is dividible by "+str(n2))
+#checking the user input predicting output accordingly
+
+if medical_cause == 'yes':
+    print("You are allowed")
 else:
-    print(str(n1)+ " is not dividible by "+str(n2))  
+    if atten>=75: #checking the condition 2 
+        print("Allowed")
+    else:
+        print("Not allowed")
