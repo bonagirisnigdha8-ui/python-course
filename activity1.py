@@ -1,8 +1,11 @@
-age=int(input("Enter your age: "))
-if age>=10: 
-    if age<=20:
-        print("Your age is: ",age ," /nYou are allowed to enter the class")
-    else:
-        print("Your age is: ",age ," /nYou are not allowed to enter the class")
-else:
-    print("Your age is: ",age ," /nYou are not elgible") 
+#Input the value of terms
+n = int(input("Enter the value of terms: "))
+
+sum = 0 #initialise
+i = 1 #initialise
+while i<=n: #loop will run from 1 to n
+    sum = sum+i
+    i = i+1
+
+    print("Sum =",sum)
+    
