@@ -1,13 +1,30 @@
-lower = int(input("Enter a lower range: "))
-upper = int(input("Enter an upper range: "))
+import turtle
 
-print("Prime numbers between", lower, "and", upper,"are: ")
-#ilterate loop from lower limit to upper limit
-for num in range(lower, upper + 1):
-    #all prime numbers are greater than 1 
-    if num > 1:
-        for i in range (2,num):
-            if (num % i) == 0 :
-                break
-            else:
-                print(num)
+turtle.Screen().bgcolor("Aqua")
+board = turtle.Turtle()
+
+#first triangle for star
+board.forward(100)# draw base
+
+board.left(120)
+board.forward(100)
+
+board.left(120)
+board.forward(100)
+
+board.penup()
+board.right(150)
+board.forward(50)
+
+#second triangle for star
+board.pendown()
+board.right(90)
+board.forward(100)
+
+board.right(120)
+board.forward(100)
+
+board.right(120)
+board.forward(100)
+
+turtle.done()
