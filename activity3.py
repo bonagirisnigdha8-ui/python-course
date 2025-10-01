@@ -1,41 +1,15 @@
-def weather_condition():
-    print("weather is pleasent in",spring)
-    print("weather is same in",autumn)
+# Function to calculate factorial
+def factorial (n):
+    if n == 0 or n == 1: # Base case: 0! and 1! are both 1 
+        return 1 
+    else:
+        return n * factorial (n - 1) # Recursive call
+    
+    # Input from user 
+    num = int(input("Enter a number: "))
 
-    spring="autumn"
-    autumn="winter"
-    weather_condition()
-
-    def add (P,Q):
-    return P+Q 
-
-def subtract (P,Q):
-    return P-Q
-
-def multiply (P,Q):
-    return P*Q
-
-def divide (P,Q):
-    return P/Q
-#Now we will take inputs from user
-print("Please select operation")
-print("+. Add")
-print("-. Subtract")
-print("*. Multiply")
-print("/. divide")
-
-choice = input("Please enter choice (+,-,*,/)")
-
-num_1 = int(input("Please enter a number: "))
-num_2 = int(input("Please enter another number: "))
-
-if choice == '+':
-    print(num_1, "+", num_2, "=", add(num_1, num_2))
-elif choice == '-':
-    print(num_1, "+", num_2, "=", subtract(num_1, num_2))
-elif choice == '*':
-    print(num_1, "+", num_2, "=", multiply(num_1, num_2))
-elif choice == '/':
-    print(num_1, "+", num_2, "=", divide(num_1, num_2))
-else:
-    print("This is an invalid input")
+    # Check if the number is negative
+    if num < 0 :
+        print ("Factorial does not exist for negative number.")
+    else:
+        print(f"the factorial of {num} is {factorial(num)}")
