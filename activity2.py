@@ -1,12 +1,18 @@
-def match_words(words): 
-    ctr = 0
-    lst = []
-    for word in words:
-        if len(word) > 1 and word[0] == word[-1]:
-            ctr += 1
-            lst.append(word)
+#function to check whether palindrome or not
+def palind(r):
+    e = len(r) -1
+    s = 0
+    while(s<e):
+        if(r[s]!=r[e]):
+            return False
+        s+=1
+        e-=1
+    return True
 
-            print("List of words with first and last character same", lst)
-            return ctr
-        count = match_words(['abc', 'cfc', 'xyz' ,'aba' ,'1221' ])
-        print("number of words having first and last character same:",)
+
+r = (1,2,3,3,2,1)
+
+if (palind(r)):
+    print("The tuple is Flip-flop")
+else:
+    print("The tuple is not Flip-flop")
