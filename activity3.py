@@ -1,13 +1,11 @@
-import array as arr
+for i in range (10):
 
-# create an array
-array_num = arr.array('i', [1, 3, 5, 3, 7, 9, 3])
-print("Original array: "+str(array_num))
+    # If value of i becomes
+    # 5 then the program is forced
+    # to exit
+    if i == 5:
 
-#count number of occurences
-print("Number of occurences of the number 3 in the said array: "+str(array_num.count(3)))
-
-#reverse the array
-array_num.reverse()
-print("reverse the order of the items:")
-print(str(array_num))
+        #prints the exit message
+        print(exit)
+        exit()
+        print(i)
